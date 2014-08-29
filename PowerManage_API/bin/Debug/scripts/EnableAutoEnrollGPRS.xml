@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<api version="1.0"> 
+    <auth login="api" password="visonic"/> 
+    <script lang="python"> 
+<![CDATA[
+import panel, time, os, sys
+
+AllPanels().EnableAutoEnroll (for_gprs = True, for_bba = False)
+
+SendData ("##################### Auto Enroll enabled for GPRS #######################")
+
+]]> 
+    </script> 
+</api>

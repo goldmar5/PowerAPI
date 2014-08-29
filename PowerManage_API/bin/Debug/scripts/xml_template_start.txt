@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<api version="1.0"> 
+    <auth login="api" password="visonic"/> 
+    <script lang="python"> 
+<![CDATA[
+import panel, time, os, sys
+
+SendData("Which panel ID?")
+
+panels = ReadData()
+list_of_panels = panels.split(' ')
+	
+task_list = []

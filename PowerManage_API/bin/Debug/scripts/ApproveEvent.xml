@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<api version="1.0"> 
+    <auth login="api" password="visonic"/> 
+    <script lang="python"> 
+<![CDATA[
+import panel, time, os, sys
+
+print ""
+time.sleep (0.5)
+print "####################################################################"
+time.sleep (0.5)
+print "######################### Approve Event ############################"
+time.sleep (0.5)
+print "####################################################################"
+time.sleep (0.5)
+
+SendData("Which event ID ?")
+
+events = ReadData()
+list_of_events = [tuple(i.split(' ')) for i in events.split(', ')]
+
+ApproveEvent(list_of_events)
+		
+SendData("PanelsListAdded")
+]]> 
+    </script> 
+</api>

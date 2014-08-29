@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<api version="1.0"> 
+    <auth login="api" password="visonic"/> 
+    <script lang="python"> 
+<![CDATA[
+import panel, time, os, sys
+
+print ""
+time.sleep (0.5)
+print "####################################################################"
+time.sleep (0.5)
+print "######################### Remove Panels ############################"
+time.sleep (0.5)
+print "####################################################################"
+time.sleep (0.5)
+
+SendData("Which panel ID you want remove? (id module)")
+
+panels = ReadData()
+list_of_panels = [tuple(i.split(' ')) for i in panels.split(', ')]
+
+AllPanels().DeletePanels (list_of_panels)
+		
+SendData("PanelsListRemoved")
+]]> 
+    </script> 
+</api>

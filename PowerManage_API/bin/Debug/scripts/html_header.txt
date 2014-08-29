@@ -1,0 +1,18 @@
+<html>
+  <body>
+      <header><meta charset="utf-8">
+          <style type="text/css">
+div
+{
+			font-family: monospace; font-size:12;
+}
+.warning { color:maroon;}
+.failed { color:red; font-weight:bold;}
+.debug { color:grey;}
+.succeeded { color:darkgreen; font-weight:bold;}
+.critical { color:red;}
+.info {color:green;}
+.section {font-weight:bold;}
+.docstring{font-style:italic;}
+          </style>
+	</header>

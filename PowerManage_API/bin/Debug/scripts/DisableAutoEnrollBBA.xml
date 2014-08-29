@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<api version="1.0"> 
+    <auth login="api" password="visonic"/> 
+    <script lang="python"> 
+<![CDATA[
+import panel, time, os, sys
+
+AllPanels().DisableAutoEnroll (for_gprs = False, for_bba = True)
+
+SendData ("##################### Auto Enroll disabled for BBA #######################")
+
+]]> 
+    </script> 
+</api>
